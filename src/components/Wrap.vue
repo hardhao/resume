@@ -31,12 +31,15 @@ export default {
     width: 1200px;
     margin-top: 100px;
     background-color: #fff;
-    box-shadow:0px 10px 10px 0px rgb(240, 38, 38);
+    box-shadow: 5px 5px 58px 8px rgb(212, 202, 199);
+    opacity: .95;
   }
   .big{
     width: 100%;
     height: 800%;
-    background-image: url('../assets/timg6.jpeg');
+    background-image: url('../assets/timg10.gif');
+    background-size:120%;
+    background-position: -180px 0;
     display: flex;
   }
 </style>

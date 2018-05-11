@@ -41,8 +41,9 @@ export default {
 }
 .wel{
     height: 378px;
-    background-color:rgb(228, 100, 14);
+    background-color:rgb(169, 226, 226);
     padding-top: 80px;
+    opacity: .9;
 }
 .imgbg{
     width: 168px;
@@ -60,6 +61,6 @@ export default {
 .wel>p{
     text-align: center;
     font-size: 30px;
-    color: lightgreen;
+    color: rgb(73, 91, 151);
 }
 </style>

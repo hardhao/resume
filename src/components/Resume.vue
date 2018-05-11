@@ -1,6 +1,7 @@
 <template>
 <div class="bigresume">
   <div class="resume">
+      <div class="rebg"></div>
       <h1>EasyHao</h1>
       <div class="top">
           <div class="lef">死神EasyHao</div>
@@ -65,15 +66,29 @@ export default {
     background-color: #ccc;
     overflow: hidden;
     height:1028px;
-    padding-top: 100px;
+    padding-top: 280px;
+    background-image: url('../assets/timg11.gif');  
+    background-size:80%;
+    background-position: 200px -200px;
 }
 .resume{
     width:768px;
     margin: 0 auto;
     overflow: hidden;
-    background-color: #fff;
+    background-color: rgba(120, 185, 223, 0.979);
     box-shadow: 0px 2px 2px 2px #e9e9e9;
     padding-bottom: 80px;
+    box-shadow: 5px 5px 58px 8px rgb(42, 230, 236);
+    opacity: .9;
+    position: relative;
+}
+.rebg{
+    position: absolute;
+    width:384px;
+    height: 100%;
+    background-color: rgb(241, 218, 5);
+    opacity: .5;
+    box-shadow: 10px 10px 58px 8px #fff; 
 }
 h1{
     text-align: center;
@@ -103,6 +118,8 @@ h1{
     border-radius: 50%;
     overflow: hidden;
     margin-top: 40px;
+    position: absolute;
+    left: 44%;
 }
 .imgbg>img{
     width: 130px;
@@ -120,7 +137,7 @@ h1{
 }
 .lianxi>p{
     font-size: 14px;
-    color: #827B86;
+    color: rgb(8, 119, 32);
     font-weight: bold;
     margin-top: 10px;
 }

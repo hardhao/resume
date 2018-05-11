@@ -26,7 +26,7 @@ export default {
 
 <style>
 .sectiondown{
-    background-color: rgb(253, 59, 11);
+    background-color: rgb(152, 186, 231);
     overflow: hidden;
     padding-bottom: 50px;
 }

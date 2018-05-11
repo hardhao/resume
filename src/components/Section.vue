@@ -29,17 +29,17 @@ export default {
 section{
     margin-top: 100px;
     overflow: hidden;
-    background-color: rgb(253, 59, 11);
+    background-color: rgb(152, 186, 231);
 }
 .heng{
     height: 27px;
-    background-color:rgb(243, 142, 9);
+    background-color:rgb(186, 179, 190);
 }
 .square{
     width: 187px;
     height: 112px;
     box-sizing: border-box;
-    border: 27px solid rgb(243, 142, 9);
+    border: 27px solid rgb(186, 179, 190);
     margin-top: -27px;
     float: left;
     margin-left: 241px;

@@ -39,6 +39,9 @@ export default {
     background-color: #ccc;
     padding-top: 100px;
     overflow: hidden;
+    background-image: url('../assets/timg9.gif');
+    background-size:cover;
+    
 }
 .mypic{
     width: 1200px;
@@ -46,6 +49,7 @@ export default {
     background-color: #fff;
     overflow: hidden;
     box-shadow: 5px 5px 58px 8px rgb(168, 166, 166);
+    opacity: .8;
 }
 .top{
     height: 100px;

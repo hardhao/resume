@@ -73,7 +73,8 @@ export default {
 }
 .wel{
     height: 378px;
-    background-color:rgb(73, 94, 99);
+    background-color:rgb(155, 180, 226);
+    opacity: .8;
     padding-top: 80px;
 }
 .imgbg{
@@ -92,7 +93,7 @@ export default {
 .wel>p{
     text-align: center;
     font-size: 30px;
-    color: lightgreen;
+    color: rgb(39, 14, 105);
 }
 ul{
     margin-left: 277px;
@@ -105,7 +106,7 @@ li{
     width: 658px;
     line-height: 82px;
     float: left;
-    box-shadow: 5px 8px 18px 0px rgba(176,169,169,0.5) ;
+    box-shadow: 5px 6px 18px 0px rgba(131, 141, 224, 0.5) ;
     border-radius: 7px ;
     margin-top: 20px;
     font-size:18px;
@@ -113,9 +114,10 @@ li{
     cursor: pointer;
     margin-bottom: 20px;
     color: #000;
+    background-color: #fff;
 }
 li:hover{
-    box-shadow: 10px 12px 18px 0px rgba(176,169,169,0.5) ;
+    box-shadow: 10px 12px 18px 0px rgba(131, 141, 224, 0.5) ;
 }
 li>span>img{
     float: left;
@@ -126,16 +128,20 @@ li>span>img{
     margin-top:25px;
 }
 .bigboke{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     padding-top: 100px;
+    background-image: url('../assets/timg12.gif');
+    background-size: cover;
 }
 .boke{
     width: 1200px;
-    background-color: #fff;
-    box-shadow: 5px 5px 58px 8px rgb(168, 166, 166);
+    background-color: rgb(155, 240, 247);
+    box-shadow: 5px 5px 58px 8px rgb(226, 231, 235);
+    /* opacity: .97;    */
+    
 }
 .down{
-    background-color: pink;   
+    background-color: rgb(112, 199, 187);   
     height: 173px;
     padding-top: 80px;
     margin-top: 100px;
@@ -143,7 +149,7 @@ li>span>img{
 .down>p{
     text-align: center;
     font-size: 16px;
-    color: rgb(194, 14, 230);
+    color: rgb(83, 86, 221);
     font-weight: bold;
 }
 </style>

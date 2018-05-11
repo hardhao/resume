@@ -32,15 +32,18 @@ export default {
 
 <style scoped>
 .bigtextnode{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     padding-top: 100px;
+    background-image: url('../assets/timg13.gif');
+    background-size: cover;
 }
 .textnode{
     width: 1200px;
     background-color: #fff;
     margin: 0 auto;
     overflow: hidden;
-    box-shadow: 5px 5px 58px 8px rgb(168, 166, 166);
+    box-shadow: 5px 5px 58px 8px rgb(241, 140, 191);
+    opacity: .9;
 }
 .top{
     height: 100px;
@@ -60,7 +63,7 @@ export default {
     margin-left: 20px;
     margin-top: -2px;
     font-size: 24px;
-    color: rgb(229, 245, 6);
+    color: rgb(214, 11, 79);
 }
 .top>p>a{
     text-decoration: none;
@@ -70,7 +73,7 @@ export default {
     margin-right: 10px;
 }
 .title{
-    background: rgb(87, 109, 170);
+    background: rgb(231, 118, 156);
     width: 390px;
     height: 740px;
     float: left;
@@ -83,7 +86,7 @@ li{
     list-style: none;
     font-size: 18px;
     margin-top: 30px;
-    color: rgb(204, 190, 190);
+    color: rgb(212, 40, 97);
     cursor: pointer;
 }
 li:hover{
@@ -91,7 +94,7 @@ li:hover{
 }
 .node{
     width: 810px;
-    background-color: rgb(136, 205, 218);
+    background-color: rgb(184, 50, 128);
     padding-top: 20px;
     float: right;
     padding-bottom: 150px;
@@ -104,14 +107,13 @@ li:hover{
     font-size: 24px;
     color: #fff;
     font-weight: bold;
-    background-color:cyan;
+    background-color:rgb(250, 36, 136);
     text-align: center;
     line-height: 60px;
     margin-top: 30px;
 }
 .node>p:nth-child(2){
     font-size: 18px;
-    background-color: #fff;
     padding: 20px 100px 20px 100px;
     line-height: 40px;
     margin-top: 80px;
