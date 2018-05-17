@@ -69,7 +69,7 @@ export default {
     padding-top: 280px;
     background-image: url('../assets/timg11.gif');  
     background-size:80%;
-    background-position: 200px -200px;
+    background-position: 180px -200px;
 }
 .resume{
     width:768px;

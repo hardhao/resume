@@ -22,8 +22,4 @@ export default {
   padding: 0;
   margin: 0 auto;
 }
-body{
-  /* background-color: #ccc; */
-  /* background-image: url('./assets.timg6.jpg'); */
-}
 </style>

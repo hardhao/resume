@@ -5,6 +5,7 @@ import Resume from '@/components/Resume'
 import Boke from '@/components/Boke'
 import TextNode from '@/components/TextNode'
 import MyPic from '@/components/MyPic'
+import One from '@/components/One'
 
 Vue.use(Router)
 
@@ -29,6 +30,10 @@ export default new Router({
         {
             path: '/mypic',
             component: MyPic
+        },
+        {
+            path: '/one',
+            component: One
         }
     ],
     mode:'history'

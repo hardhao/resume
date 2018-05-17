@@ -8,7 +8,7 @@
       <div class="title">
           <ul>
               <li>Git 技巧</li>
-              <li>React 响应式</li>
+              <router-link to="/one"><li>React 响应式</li></router-link>
               <li>React 策略</li>
           </ul>
       </div>
@@ -25,8 +25,12 @@
 </template>
 
 <script>
+import One from './One'
 export default {
-    name:'TextNode'
+    name:'TextNode',
+    components:{
+        One
+    }
 }
 </script>
 

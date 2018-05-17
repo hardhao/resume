@@ -41,8 +41,8 @@ export default {
     overflow: hidden;
     background-image: url('../assets/timg9.gif');
     background-size:cover;
-    
-}
+    background-position: 150px 100px;
+    }
 .mypic{
     width: 1200px;
     margin: 0 auto;
