@@ -2,7 +2,9 @@
 <div class="bigresume">
   <div class="resume">
       <div class="rebg"></div>
-      <h1>EasyHao</h1>
+      <h1 v-if="name">
+          {{name}}
+      </h1>
       <div class="top">
           <div class="lef">死神EasyHao</div>
           <div class="rig">超究极死亡台风索</div>
@@ -56,8 +58,19 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-    name:'Resume'
+    name:'Resume',
+    data:()=>({
+        name:''
+    }),
+    created(){
+        const uri = 'https://raw.githubusercontent.com/hardhao/resume/master/data/posts/index.json'
+            axios.get(uri).then(res => {
+                this.name = res.data.name
+            })
+    }
+    
 }
 </script>
 
