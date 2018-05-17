@@ -1,9 +1,9 @@
 <template>
 <div class="bigresume">
-  <div class="resume">
+  <div v-if="user" class="resume">
       <div class="rebg"></div>
-      <h1 v-if="name">
-          {{name}}
+      <h1>
+          {{user.name}}
       </h1>
       <div class="top">
           <div class="lef">死神EasyHao</div>
@@ -15,7 +15,7 @@
       <div class="mid">
           <div class="lianxi">
               <p>联系方式:</p>
-              <p v-if="weixin">微信：{{weixin}}</p>
+              <p>微信：{{user.weixin}}</p>
               <p>电话：1873357573</p>
           </div>
           <div class="rea">
@@ -65,13 +65,18 @@ export default {
         name:'',
         weixin:''
     }),
+    computed:{
+        user(){
+            return this.$store.state.comment.all
+        }
+    },
     created(){
         // const uri = 'https://raw.githubusercontent.com/hardhao/resume/master/data/posts/index.json'
         //     axios.get(uri).then(res => {
         //         this.name = res.data.name
         //     }),
 
-             this.$store.dispatch({type:'addName',})
+             this.$store.dispatch({type:'fetchName'})
 
 
             // axios.get(uri).then(res => {
@@ -88,7 +93,7 @@ export default {
     overflow: hidden;
     height:1028px;
     padding-top: 280px;
-    background-image: url('../assets/timg11.gif');  
+    /* background-image: url('../assets/timg11.gif');   */
     background-size:80%;
     background-position: 180px -200px;
 }
