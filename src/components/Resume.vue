@@ -15,7 +15,7 @@
       <div class="mid">
           <div class="lianxi">
               <p>联系方式:</p>
-              <p>微信：zjh19981122</p>
+              <p v-if="weixin">微信：{{weixin}}</p>
               <p>电话：1873357573</p>
           </div>
           <div class="rea">
@@ -62,12 +62,17 @@ import axios from 'axios'
 export default {
     name:'Resume',
     data:()=>({
-        name:''
+        name:'',
+        weixin:''
     }),
     created(){
         const uri = 'https://raw.githubusercontent.com/hardhao/resume/master/data/posts/index.json'
             axios.get(uri).then(res => {
                 this.name = res.data.name
+            }),
+            axios.get(uri).then(res => {
+                console.log(res.data)
+                this.weixin = res.data.weixin
             })
     }
     
