@@ -66,14 +66,17 @@ export default {
         weixin:''
     }),
     created(){
-        const uri = 'https://raw.githubusercontent.com/hardhao/resume/master/data/posts/index.json'
-            axios.get(uri).then(res => {
-                this.name = res.data.name
-            }),
-            axios.get(uri).then(res => {
-                console.log(res.data)
-                this.weixin = res.data.weixin
-            })
+        // const uri = 'https://raw.githubusercontent.com/hardhao/resume/master/data/posts/index.json'
+        //     axios.get(uri).then(res => {
+        //         this.name = res.data.name
+        //     }),
+
+             this.$store.dispatch({type:'addName',})
+
+
+            // axios.get(uri).then(res => {
+            //     this.weixin = res.data.weixin
+            // })
     }
     
 }
