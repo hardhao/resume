@@ -77,7 +77,7 @@ export default {
     background-color: #ccc;
     padding-top: 100px;
     overflow: hidden;
-    /* background-image: url('../assets/timg9.gif'); */
+    background-image: url('../assets/timg9.gif');
     background-size:cover;
     background-position: 150px 100px;
     }
