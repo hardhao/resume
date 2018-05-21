@@ -14,7 +14,13 @@
       </div>
       <div class="node">
           <p>干就完事了</p>
-          <img src="../assets/timg14.jpeg" alt="">
+          <div v-masonry transition-duration="0.3s" item-selector=".item" class="grid">
+          <div class="grid-sizer"></div>
+          <div v-masonry-tile :key="index" class="item" v-for="(item, index) in blocks">
+                <img :src="`/timg${item.id}.jpeg`">
+          </div>
+          </div>
+          <!-- <img src="../assets/timg14.jpeg" alt="">
           <img src="../assets/timg11.jpeg" alt="">
           <img src="../assets/timg12.jpeg" alt="">
           <img src="../assets/timg13.jpeg" alt="">
@@ -22,15 +28,47 @@
           <img src="../assets/timg16.jpeg" alt="">
           <img src="../assets/timg17.jpeg" alt="">
           <img src="../assets/timg18.jpeg" alt="">
-          <img src="../assets/timg19.jpeg" alt="">
+          <img src="../assets/timg19.jpeg" alt=""> -->
       </div>
   </div>
+  
   </div>
 </template>
 
 <script>
 export default {
-    name:'MyPic'
+    name:'MyPic',
+    data:() => ({
+        blocks:[
+            {
+                id:'14',
+            },
+            {
+                id:'11',
+            },
+            {
+                id:'12',
+            },
+            {
+                id:'13',
+            },
+            {
+                id:'15',
+            },
+            {
+                id:'16',
+            },
+            {
+                id:'17',
+            },
+            {
+                id:'18',
+            },
+            {
+                id:'19',
+            },
+        ]
+    })
 }
 </script>
 
@@ -39,7 +77,7 @@ export default {
     background-color: #ccc;
     padding-top: 100px;
     overflow: hidden;
-    background-image: url('../assets/timg9.gif');
+    /* background-image: url('../assets/timg9.gif'); */
     background-size:cover;
     background-position: 150px 100px;
     }
@@ -108,15 +146,6 @@ li:hover{
     padding-left: 40px;
     padding-right:40px;
 }
-.node>img{
-    width: 200px;
-    height: 250px;
-    margin-top: 20px;
-    margin-left:40px;
-}
-.node>img:nth-child(2),.node>img:nth-child(5),.node>img:nth-child(8){
-    margin-left:24px;
-}
 .node>p:nth-child(1){
     width: 700px;
     border-radius: 10px;
@@ -135,4 +164,29 @@ li:hover{
     line-height: 40px;
     margin-top: 80px;
 }
+.grid {
+    width: 700px;
+   height: 1000px;
+   background: #ddd;
+ }
+ 
+ .grid:after {
+   content: '';
+   display: block;
+   clear: both;
+ }
+ 
+ .grid-sizer,
+ .item {
+   width: 33.333%;
+ }
+ 
+ .item {
+   float: left;
+ }
+ 
+ .item img {
+   display: block;
+   max-width: 100%;
+ }
 </style>

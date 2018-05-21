@@ -71,17 +71,7 @@ export default {
         }
     },
     created(){
-        // const uri = 'https://raw.githubusercontent.com/hardhao/resume/master/data/posts/index.json'
-        //     axios.get(uri).then(res => {
-        //         this.name = res.data.name
-        //     }),
-
-             this.$store.dispatch({type:'fetchName'})
-
-
-            // axios.get(uri).then(res => {
-            //     this.weixin = res.data.weixin
-            // })
+        this.$store.dispatch({type:'fetchName'})
     }
     
 }
